@@ -1,0 +1,2 @@
+# Terraform files to ignore containing sensitive information
+terraform.tfvars
