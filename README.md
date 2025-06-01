@@ -1,5 +1,5 @@
 Automated Azure SQL Database Creation with Terraform
-This project provides an automated solution to deploy an Azure SQL Database using Terraform, with optional post-deployment testing usingg Bash scripts. It enables flexible provisioning, optional firewall rules, and connection testing.
+This project provides an automated solution for deploying an Azure SQL Database using Terraform, along with optional post-deployment testing using Bash scripts. It enables flexible provisioning, optional firewall rules, and connection testing.
 
 Deploys:
 Azure Resource Group
@@ -8,9 +8,9 @@ An Azure SQL Database
 
 Configurable Variables
 The following variables can be configured in the terraform.tfvars file:
-Database Name
-Region/Location
-Adminstrator login credentials
+- Database Name
+- Region/Location
+- Administrator login credentials
 Optional Firewall Rules - Use a shell script to create firewall rules for your custom IP address.
 Connection String Output - Outputs  the connection string for the Azure SQL Database upon successful deployment.
 Optional Connection Test - Bash script to test the connection to the Azure SQL Database.
@@ -27,8 +27,8 @@ azure-sql-terraform-project/
 
 **Prerequisites**
 Before running the Terraform scripts, ensure you have the following prerequisites:
-Azure CLI installed and configured with the necessary permissions.
-Terraform installed on your local machine.
+Azure CLI is installed and configured with the necessary permissions.
+Terraform is installed on your local machine.
 Bash shell access to your local machine.
 
 **Getting Started**
@@ -56,7 +56,7 @@ bash deploy.sh
 - Optionally tests the SQL connection using 'sqlcmd'.
 
 **Outputs**
-After successful deployment, the Terraform script will output the sql server name and connection string for the Azure SQL Database.
+After successful deployment, the Terraform script will output the SQL server name and connection string for the Azure SQL Database.
 
 **Cleanup**
 To destroy the Azure resources created by Terraform, run:
