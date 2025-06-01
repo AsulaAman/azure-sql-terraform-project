@@ -1,2 +1,5 @@
 # Terraform files to ignore containing sensitive information
 terraform.tfvars
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
